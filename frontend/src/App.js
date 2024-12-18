@@ -39,7 +39,7 @@ const App = () => {
   useEffect(() => {
     fetchData();
   }, [inputs]);
-};
+
   
 
   const handleInputChange = (e) => {
