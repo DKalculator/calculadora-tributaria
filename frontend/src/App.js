@@ -207,7 +207,10 @@ const App = () => {
       <strong>Atenção:</strong> Os cálculos fornecidos por esta ferramenta são aproximados e baseados nas informações mais recentes disponíveis.  
       Mudanças legislativas podem não estar refletidas em tempo real, e os valores simulados não substituem orientação contábil ou jurídica profissional.  
       Consulte fontes oficiais ou especialistas antes de tomar decisões baseadas nos resultados apresentados.  
-      Saiba mais no nosso <a href="/disclaimer.html">Disclaimer completo</a>.
+      Saiba mais no nosso <a href="/disclaimer" target="_blank" rel="noopener noreferrer">
+  Disclaimer completo
+</a>
+.
     </p>
   </div>
 </footer>
