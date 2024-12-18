@@ -21,35 +21,25 @@ const App = () => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch("http://localhost:5000/simulate_regimes", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(inputs),
-      });
+      const response = await fetch(
+        `${process.env.REACT_APP_BACKEND_URL}/simulate_regimes`, // URL dinâmica
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(inputs),
+        }
+      );
       const data = await response.json();
       setResultado(data);
     } catch (error) {
       console.error("Erro ao buscar dados:", error);
     }
   };
+
   useEffect(() => {
-    const fetchData = async () => {
-      console.log("Enviando para o backend:", inputs); // Log dos inputs
-      try {
-        const response = await fetch("http://localhost:5000/simulate_regimes", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(inputs),
-        });
-        const data = await response.json();
-        console.log("Resposta do backend:", data); // Log da resposta
-        setResultado(data);
-      } catch (error) {
-        console.error("Erro ao buscar dados:", error);
-      }
-    };
     fetchData();
   }, [inputs]);
+};
   
 
   const handleInputChange = (e) => {
