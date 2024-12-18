@@ -1,0 +1,109 @@
+{
+  "estados": {
+    "AC": { "ICMS": 0.17, "IBS": 0.18 },
+    "AL": { "ICMS": 0.18, "IBS": 0.19 },
+    "AP": { "ICMS": 0.17, "IBS": 0.18 },
+    "AM": { "ICMS": 0.20, "IBS": 0.20 },
+    "BA": { "ICMS": 0.19, "IBS": 0.21 },
+    "CE": { "ICMS": 0.18, "IBS": 0.19 },
+    "DF": { "ICMS": 0.20, "IBS": 0.20 },
+    "ES": { "ICMS": 0.17, "IBS": 0.18 },
+    "GO": { "ICMS": 0.19, "IBS": 0.19 },
+    "MA": { "ICMS": 0.22, "IBS": 0.21 },
+    "MT": { "ICMS": 0.17, "IBS": 0.18 },
+    "MS": { "ICMS": 0.19, "IBS": 0.19 },
+    "MG": { "ICMS": 0.18, "IBS": 0.20 },
+    "PA": { "ICMS": 0.17, "IBS": 0.18 },
+    "PB": { "ICMS": 0.20, "IBS": 0.20 },
+    "PR": { "ICMS": 0.195, "IBS": 0.20 },
+    "PE": { "ICMS": 0.205, "IBS": 0.21 },
+    "PI": { "ICMS": 0.21, "IBS": 0.21 },
+    "RJ": { "ICMS": 0.20, "IBS": 0.22 },
+    "RN": { "ICMS": 0.18, "IBS": 0.20 },
+    "RS": { "ICMS": 0.17, "IBS": 0.18 },
+    "RO": { "ICMS": 0.17, "IBS": 0.18 },
+    "RR": { "ICMS": 0.17, "IBS": 0.18 },
+    "SC": { "ICMS": 0.17, "IBS": 0.18 },
+    "SP": { "ICMS": 0.18, "IBS": 0.20 },
+    "SE": { "ICMS": 0.18, "IBS": 0.19 },
+    "TO": { "ICMS": 0.17, "IBS": 0.18 }
+  },
+  "setores": {
+    "educacao": { "ISS": 0.02, "IBS": 0.10 },
+    "saude": { "ISS": 0.03, "IBS": 0.12 },
+    "industria": { "ISS": 0.02, "IBS": 0.22 },
+    "comercio": { "ISS": 0.02, "IBS": 0.15 },
+    "servicos": { "ISS": 0.05, "IBS": 0.16 },
+    "default": { "ISS": 0.02, "IBS": 0.18 }
+  },
+  "regime_atual": {
+    "PIS_COFINS": 0.0925,
+    "ICMS": {
+      "default": 0.18
+    },
+    "ISS": {
+      "default": 0.02,
+      "educacao": 0.01,
+      "saude": 0.015,
+      "industria": 0.02,
+      "comercio": 0.02,
+      "servicos": 0.05
+    },
+    "lucro_presumido": {
+      "default": 0.32,
+      "educacao": 0.16,
+      "saude": 0.18
+    },
+    "aliquota_presumida": 0.25,
+    "IRPJ_CSLL": 0.34
+  },
+ "novo_regime": {
+    "IBS": {
+      "default": {
+        "default": 0.18,
+        "educacao": 0.10,
+        "saude": 0.12,
+        "industria": 0.22,
+        "comercio": 0.15,
+        "servicos": 0.16
+      },
+      "AC": { "default": 0.18, "educacao": 0.10, "saude": 0.12 },
+      "AL": { "default": 0.18, "educacao": 0.10, "saude": 0.12 },
+      "AP": { "default": 0.18, "educacao": 0.10, "saude": 0.12 },
+      "AM": { "default": 0.20, "educacao": 0.10, "saude": 0.12 },
+      "BA": { "default": 0.21, "educacao": 0.10, "saude": 0.12 },
+      "CE": { "default": 0.19, "educacao": 0.10, "saude": 0.12 },
+      "DF": { "default": 0.20, "educacao": 0.10, "saude": 0.12 },
+      "ES": { "default": 0.18, "educacao": 0.10, "saude": 0.12 },
+      "GO": { "default": 0.19, "educacao": 0.10, "saude": 0.12 },
+      "MA": { "default": 0.21, "educacao": 0.10, "saude": 0.12 },
+      "MT": { "default": 0.18, "educacao": 0.10, "saude": 0.12 },
+      "MS": { "default": 0.19, "educacao": 0.10, "saude": 0.12 },
+      "MG": { "default": 0.20, "educacao": 0.10, "saude": 0.12 },
+      "PA": { "default": 0.18, "educacao": 0.10, "saude": 0.12 },
+      "PB": { "default": 0.20, "educacao": 0.10, "saude": 0.12 },
+      "PR": { "default": 0.20, "educacao": 0.10, "saude": 0.12 },
+      "PE": { "default": 0.21, "educacao": 0.10, "saude": 0.12 },
+      "PI": { "default": 0.20, "educacao": 0.10, "saude": 0.12 },
+      "RJ": { "default": 0.22, "educacao": 0.11, "saude": 0.13 },
+      "RN": { "default": 0.20, "educacao": 0.10, "saude": 0.12 },
+      "RS": { "default": 0.18, "educacao": 0.10, "saude": 0.12 },
+      "RO": { "default": 0.18, "educacao": 0.10, "saude": 0.12 },
+      "RR": { "default": 0.18, "educacao": 0.10, "saude": 0.12 },
+      "SC": { "default": 0.18, "educacao": 0.10, "saude": 0.12 },
+      "SP": { "default": 0.20, "educacao": 0.10, "saude": 0.12 },
+      "SE": { "default": 0.19, "educacao": 0.10, "saude": 0.12 },
+      "TO": { "default": 0.18, "educacao": 0.10, "saude": 0.12 }
+    },
+    "CBS": 0.12
+  }
+,
+"simples_nacional": [
+  { "limite": 180000, "aliquota": 0.06 },
+  { "limite": 360000, "aliquota": 0.112 },
+  { "limite": 720000, "aliquota": 0.135 },
+  { "limite": 1800000, "aliquota": 0.16 },
+  { "limite": 3600000, "aliquota": 0.21 },
+  { "limite": 4800000, "aliquota": 0.30 }
+]
+}
